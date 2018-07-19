@@ -1,0 +1,93 @@
+body{
+  margin:0px;
+}
+.back1,.back2{
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+nav{
+  top: 0px;
+  position: fixed;
+  overflow: auto;
+  background-color: black;
+  width: 100%;
+  float: left;
+}
+nav a{
+  padding: 14px 16px;
+  display: block;
+  float:left;
+  text-decoration: none;
+  color: white;
+  border-right: 1px solid #bbb;
+}
+nav a:hover{
+  background-color: grey;
+}
+.back1{
+  background-image: url(back1.jpg);
+  min-height: 800px;
+}
+.back2{
+  background-image: url(back2.jpg);
+  min-height: 800px;
+}
+.size1,.size2{
+  width: 400px;
+  height: 300px;
+}
+.size2{
+  padding-left: 50px;
+}
+.animate:hover{
+  animation-name: zoomin;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.animate{
+  animation-name: zoomout;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes zoomin {
+  from{
+    width: 580px;
+    height: 500px;
+  }
+  to {
+    width: 640px;
+    height: 426px;
+  }
+}
+@keyframes zoomout {
+  from{
+    width: 640px;
+    height: 426px;
+  }
+  to {
+    width: 580px;
+    height: 500px;
+  }
+}
+.text{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.caption{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+.captionback{
+  color:white;
+  background-color: black;
+  text-align: center;
+  padding: 50px 80px;
+}
