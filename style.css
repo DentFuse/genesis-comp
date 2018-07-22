@@ -23,6 +23,7 @@ nav a{
   text-decoration: none;
   color: white;
   border-right: 1px solid #bbb;
+  font-family: 'Roboto', sans-serif;
 }
 nav a:hover{
   background-color: grey;
@@ -90,4 +91,48 @@ nav a:hover{
   background-color: black;
   text-align: center;
   padding: 50px 80px;
+}
+.sidemenu {
+  width: 300px;
+  top: 0px;
+  right: -360px;
+  height: 100%;
+  position: fixed;
+  background-color: black;
+}
+.sidemenu:hover{
+  animation-name: slidein;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.sidemenu{
+  animation-name: slideout;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes slidein{
+  from {
+    right: -270px;
+  }
+  to {
+    right: 0px;
+  }
+}
+@keyframes slideout{
+  from {
+    right: 0px;
+  }
+  to {
+    right: -270px;
+  }
+}
+.sidemenu a{
+  width: 100%;
+  padding: 35px 0px 35px 30px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  /* border-bottom: 1px solid #bbb; */
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
 }
